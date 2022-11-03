@@ -20,6 +20,37 @@
 
 namespace Wikimedia\Bcp47Code;
 
-class Bcp47Code {
+/**
+ * This interface defines an opaque object representing a language.
+ * The language can return a standardized IETF BCP 47 language tag
+ * representing itself.
+ *
+ * It is recommended that the internal language class in your code
+ * implement the Bcp47Code interface, and that you provide a mechanism
+ * that will accept a Bcp47Code and return an appropriate instance of
+ * your internal language code.
+ *
+ * For example:
+ * <pre>
+ * use Wikimedia\Bcp47Code\Bcp47Code;
+ *
+ * class MyLanguage implements Bcp47Code {
+ *    public function toBcp47(): string {
+ *      return $this->code;
+ *    }
+ *    public static function fromBcp47(Bcp47Code $code): MyLanguage {
+ *      if ($code instanceof MyLanguage) {
+ *         return $code;
+ *      }
+ *      return new MyLanguage($code->toBcp47());
+ *    }
+ * }
+ * </pre>
+ */
+interface Bcp47Code {
 
+	/**
+	 * @return string a standardized IETF BCP 47 language tag
+	 */
+	public function toBcp47(): string;
 }
