@@ -55,7 +55,7 @@ class Bcp47CodeValue implements Bcp47Code {
 	 * @param Bcp47Code $language an object representing a language
 	 * @return Bcp47CodeValue a simple value object representing a language.
 	 */
-	public static function fromBcp47( Bcp47Code $language ): Bcp47CodeValue {
+	public static function fromBcp47Code( Bcp47Code $language ): Bcp47CodeValue {
 		if ( $language instanceof Bcp47CodeValue ) {
 			return $language;
 		}
