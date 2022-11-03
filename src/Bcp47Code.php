@@ -35,14 +35,14 @@ namespace Wikimedia\Bcp47Code;
  * use Wikimedia\Bcp47Code\Bcp47Code;
  *
  * class MyLanguage implements Bcp47Code {
- *    public function toBcp47(): string {
+ *    public function toBcp47Code(): string {
  *      return $this->code;
  *    }
  *    public static function fromBcp47(Bcp47Code $code): MyLanguage {
  *      if ($code instanceof MyLanguage) {
  *         return $code;
  *      }
- *      return new MyLanguage($code->toBcp47());
+ *      return new MyLanguage($code->toBcp47Code());
  *    }
  * }
  * </pre>
@@ -52,5 +52,5 @@ interface Bcp47Code {
 	/**
 	 * @return string a standardized IETF BCP 47 language tag
 	 */
-	public function toBcp47(): string;
+	public function toBcp47Code(): string;
 }
