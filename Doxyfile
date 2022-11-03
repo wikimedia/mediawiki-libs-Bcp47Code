@@ -1,6 +1,6 @@
 # Doxyfile <https://www.doxygen.nl/manual/config.html>
 PROJECT_NAME           = "Bcp47Code"
-PROJECT_BRIEF          = "Simple interface representing languages which have a BCP-47 code"
+PROJECT_BRIEF          = "Simple interface representing languages which have a BCP 47 code"
 OUTPUT_DIRECTORY       = doc
 JAVADOC_AUTOBRIEF      = YES
 QT_AUTOBRIEF           = YES

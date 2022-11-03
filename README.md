@@ -3,7 +3,7 @@
 Bcp47Code
 =====================
 
-Simple interface representing languages which have a BCP-47 code.
+Simple interface representing languages which have a BCP 47 code.
 
 This abstracts the details of a "language" object in MediaWiki (or your
 code) and exposes only the ability to convert this opaque object to
@@ -49,7 +49,7 @@ external libraries such as [Parsoid], as well as making the interfaces
 between BCP 47 users (such as HTML and HTTP handlers) and core strongly
 typed and clear by using this opaque interface object.  This avoids
 confusion between strings representing "MediaWiki internal language codes"
-(case-sensitive, usually lower-case) and strings representing "BCP-47 codes"
+(case-sensitive, usually lower-case) and strings representing "BCP 47 codes"
 (case-insensitive, often mixed-case).
 
 
