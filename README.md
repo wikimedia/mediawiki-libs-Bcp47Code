@@ -1,4 +1,4 @@
-[![Latest Stable Version]](https://packagist.org/packages/wikimedia/bcp47-code) [![License]](https://packagist.org/packages/wikimedia/bcp47-code)
+[![Latest Stable Version]](https://packagist.org/packages/wikimedia/bcp-47-code) [![License]](https://packagist.org/packages/wikimedia/bcp-47-code)
 
 Bcp47Code
 =====================
@@ -58,5 +58,5 @@ confusion between strings representing "MediaWiki internal language codes"
 [RFC 4647]: https://www.rfc-editor.org/info/rfc4647
 [HTML]: https://www.w3.org/International/articles/language-tags/
 [HTTP]: https://httpwg.org/specs/rfc9110.html#field.accept-language
-[Latest Stable Version]: https://poser.pugx.org/wikimedia/bcp47-code/v/stable.svg
-[License]: https://poser.pugx.org/wikimedia/bcp47-code/license.svg
+[Latest Stable Version]: https://poser.pugx.org/wikimedia/bcp-47-code/v/stable.svg
+[License]: https://poser.pugx.org/wikimedia/bcp-47-code/license.svg

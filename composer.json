@@ -1,5 +1,5 @@
 {
-	"name": "wikimedia/bcp47-code",
+	"name": "wikimedia/bcp-47-code",
 	"description": "Simple interface representing languages which have a BCP-47 code",
 	"license": "GPL-2.0-or-later",
 	"homepage": "https://www.mediawiki.org/wiki/Bcp47Code",
