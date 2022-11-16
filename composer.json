@@ -23,7 +23,7 @@
 		"php": ">=7.4.3"
 	},
 	"require-dev": {
-		"mediawiki/mediawiki-codesniffer": "39.0.0",
+		"mediawiki/mediawiki-codesniffer": "40.0.1",
 		"mediawiki/mediawiki-phan-config": "0.12.0",
 		"mediawiki/minus-x": "1.1.1",
 		"ockcyp/covers-validator": "1.6.0",
@@ -36,15 +36,16 @@
 			"parallel-lint . --exclude vendor",
 			"phpunit",
 			"covers-validator",
-			"phpcs -sp",
+			"@phpcs",
 			"@phan",
 			"minus-x check ."
 		],
 		"phan": "phan --allow-polyfill-parser",
 		"cover": "phpunit --coverage-html coverage",
 		"fix": [
-			"phpcbf",
-			"minus-x fix ."
-		]
+			"minus-x fix .",
+			"phpcbf"
+		],
+		"phpcs": "phpcs -sp"
 	}
 }
