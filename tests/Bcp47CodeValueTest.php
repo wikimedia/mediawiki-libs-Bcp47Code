@@ -2,10 +2,16 @@
 
 namespace Wikimedia\Bcp47Code\Tests;
 
-class Bcp47CodeValueTest {
+use Wikimedia\Bcp47Code\Bcp47Code;
+use Wikimedia\Bcp47Code\Bcp47CodeValue;
+
+/**
+ * @coversDefaultClass \Wikimedia\Bcp47Code\Bcp47CodeValue
+ */
+class Bcp47CodeValueTest extends \PHPUnit\Framework\TestCase {
 
 	/**
-	 * @covers Bcp47CodeValue::toBcp47Code
+	 * @covers ::toBcp47Code
 	 */
 	public function testToBcp47Code() {
 		$en = new Bcp47CodeValue( 'en' );
@@ -18,7 +24,7 @@ class Bcp47CodeValueTest {
 	}
 
 	/**
-	 * @covers Bcp47CodeValue::fromBcp47Code
+	 * @covers ::fromBcp47Code
 	 */
 	public function testFromBcp47Code() {
 		# create a new Bcp47CodeValue from an anonymous implementation of
