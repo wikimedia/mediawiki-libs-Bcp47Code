@@ -1,5 +1,7 @@
 # Release History
 
+## x.x.x (not yet released)
+
 ## 2.0.1 (2024-11-09)
 * Build system dependency bumps.
 
