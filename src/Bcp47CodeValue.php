@@ -28,9 +28,8 @@ class Bcp47CodeValue implements Bcp47Code {
 
 	/**
 	 * The BCP 47 code corresponding to this language.
-	 * @var string
 	 */
-	private $code;
+	private string $code;
 
 	/**
 	 * Create a new instance of this value object representing a language with
@@ -51,7 +50,7 @@ class Bcp47CodeValue implements Bcp47Code {
 		return ( $this === $other ) || self::isSameCode( $this, $other );
 	}
 
-	public function __toString() {
+	public function __toString(): string {
 		return $this->toBcp47Code();
 	}
 
@@ -74,7 +73,7 @@ class Bcp47CodeValue implements Bcp47Code {
 	 * @param Bcp47Code $b
 	 * @return bool True if the bcp-47 codes should be considered equal
 	 */
-	public static function isSameCode( Bcp47Code $a, Bcp47Code $b ) {
+	public static function isSameCode( Bcp47Code $a, Bcp47Code $b ): bool {
 		return ( $a === $b ) || strcasecmp( $a->toBcp47Code(), $b->toBcp47Code() ) === 0;
 	}
 }
