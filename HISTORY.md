@@ -1,5 +1,7 @@
 # Release History
 
+## x.x.x (not yet released)
+
 ## 2.0.2 (2026-01-08)
 * Drop support for PHP < 8.1
 * Update depdendencies
