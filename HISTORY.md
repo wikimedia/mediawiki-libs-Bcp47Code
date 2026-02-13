@@ -1,5 +1,7 @@
 # Release History
 
+## x.x.x (not yet released)
+
 ## 2.0.3 (2026-02-13)
 * Update dependencies.
 
